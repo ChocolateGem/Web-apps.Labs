@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h1>Завантажте фото</h1>
+    <form action="process.php" method="post" enctype="multipart/form-data">
+        <label for="file">Виберіть фото:</label>
+        <input type="file" name="file" id="file" accept="image/*" required>
+        <button type="submit" name="submit">Завантажити</button>
+    </form>
+
+    <h1>Запис у файл</h1>
+    <form action="text.php" method="post">
+        <label for="logText">Текст для запису:</label><br>
+        <textarea id="logText" name="logText" rows="4" cols="50" required></textarea><br><br>
+        <button type="submit">Записати в лог</button>
+    </form>
+
+    <h2>Список завантажених файлів:</h2>
+    <form action="list.php" method="post">
+        <button type="submit">Показати список файлів</button>
+    </form>
+
+</body>
+</html>
